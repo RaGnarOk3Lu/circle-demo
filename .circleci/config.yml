@@ -20,7 +20,7 @@ jobs:
       - save_cache:
           paths: 
             - node_modules
-          keys: dependencies_imooc
+          key: dependencies_imooc
       - run:
           name: Build
           command: yarn build
