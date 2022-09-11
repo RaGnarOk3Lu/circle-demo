@@ -8,14 +8,12 @@ jobs:
       - master
     steps:
       - run:
-          name: The First Step
+          name: Authorization
           command: |
             add_ssh_keys: 
               fingerprints: 
                 - "7d:ab:66:3c:75:01:a2:39:04:f4:0f:f1:ce:3c:8c:92"
             checkout 
-            echo 'Hello World!'
-            npm -v
       - run:
           name: Install
           command: yarn install
